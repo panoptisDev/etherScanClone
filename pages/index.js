@@ -62,7 +62,7 @@ const Home = () => {
                 <div>
                   <div className={Style.miner}>
                     <p>
-                      {/* ////s//// */}
+                      {/* ////s///// */}
                       <span>
                         Miner:&nbsp;&nbsp;
                         <Link

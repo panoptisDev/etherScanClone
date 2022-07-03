@@ -68,7 +68,7 @@ const block = () => {
   //     setOpen(false);
   //     getBlockDetails();
   //   }
-  // };
+  // };/
 
   useEffect(() => {
     getBlockDetails();

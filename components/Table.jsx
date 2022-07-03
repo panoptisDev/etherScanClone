@@ -43,7 +43,7 @@ const Table = ({
       setOpenERC21(false);
       setOpenERC1155(false);
       setAddressByMinedeBlock(false);
-    } else if (buttonText === "Internal Trans") {
+    } else if (buttonText === "Internal") {
       setAddressInternalTransaction(true);
       setHistoryAccount(false);
       setTransactionRangeBlock(false);
@@ -51,7 +51,7 @@ const Table = ({
       setOpenERC21(false);
       setOpenERC1155(false);
       setAddressByMinedeBlock(false);
-    } else if (buttonText === "Trans Block") {
+    } else if (buttonText === "Trans") {
       setTransactionRangeBlock(true);
       setAddressInternalTransaction(false);
       setHistoryAccount(false);
@@ -59,7 +59,7 @@ const Table = ({
       setOpenERC21(false);
       setOpenERC1155(false);
       setAddressByMinedeBlock(false);
-    } else if (buttonText === "ERC-20 Token") {
+    } else if (buttonText === "ERC-20") {
       setOpenERC20(true);
       setAddressInternalTransaction(false);
       setHistoryAccount(false);
@@ -67,7 +67,7 @@ const Table = ({
       setOpenERC21(false);
       setOpenERC1155(false);
       setAddressByMinedeBlock(false);
-    } else if (buttonText === "ERC-21 Token") {
+    } else if (buttonText === "ERC-21") {
       setOpenERC21(true);
       setAddressInternalTransaction(false);
       setHistoryAccount(false);
@@ -75,7 +75,7 @@ const Table = ({
       setOpenERC20(false);
       setOpenERC1155(false);
       setAddressByMinedeBlock(false);
-    } else if (buttonText === "ERC1155 Token") {
+    } else if (buttonText === "ERC1155") {
       setOpenERC1155(true);
       setAddressInternalTransaction(false);
       setHistoryAccount(false);
@@ -83,7 +83,7 @@ const Table = ({
       setOpenERC20(false);
       setOpenERC21(false);
       setAddressByMinedeBlock(false);
-    } else if (buttonText === "Mined Block") {
+    } else if (buttonText === "Mined") {
       setAddressByMinedeBlock(true);
       setAddressInternalTransaction(false);
       setHistoryAccount(false);
@@ -101,23 +101,23 @@ const Table = ({
           Transaction
         </button>
         <button className={Style.btn} onClick={(e) => tabs(e)}>
-          Internal Trans
+          Internal
         </button>
         <button className={Style.btn} onClick={(e) => tabs(e)}>
-          Trans Block
+          Trans
         </button>
 
         <button className={Style.btn} onClick={(e) => tabs(e)}>
-          Mined Block
+          Mined
         </button>
         <button className={Style.btn} onClick={(e) => tabs(e)}>
-          ERC-20 Token
+          ERC-20
         </button>
         <button className={Style.btn} onClick={(e) => tabs(e)}>
-          ERC-21 Token
+          ERC-21
         </button>
         <button className={Style.btn} onClick={(e) => tabs(e)}>
-          ERC1155 Token
+          ERC1155
         </button>
       </div>
 

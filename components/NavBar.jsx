@@ -12,6 +12,7 @@ import { ethers } from "ethers";
 import user from "../avatar.png";
 import etherLogo from "../eth.png";
 import logo from "../logo.png";
+import logoTop from "../footerLogo.png";
 
 const NavBar = () => {
   const { provider } = useContext(Etherescan);
@@ -98,7 +99,7 @@ const NavBar = () => {
     checkAccountExist();
   });
 
-  // console.log(price);
+  // //console.log(price);
 
   const connectWallet = async () => {
     if (!window.ethereum) return console.log("Install MataMask");
@@ -121,14 +122,19 @@ const NavBar = () => {
         <div className={Style.navbar__container}>
           <div className={Style.left}>
             <Link href="/">
-              <h1>Ether Finance</h1>
+              <div>
+                <h1 className={Style.desktop}>Ether Finance</h1>
+                <h1 className={Style.mobile}>
+                  <Image src={logoTop} alt="logo" width={50} height={50} />
+                </h1>
+              </div>
             </Link>
           </div>
           <div className={Style.right}>
             {userAccount.length ? (
               <div className={Style.connected}>
                 <button onClick={() => openUserInfo()}>
-                  Acc: {userAccount.slice(0, 30)}..
+                  Acc: {userAccount.slice(0, 10)}..
                 </button>
                 {openModel ? (
                   <div className={Style.userModal}>

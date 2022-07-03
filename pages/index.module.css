@@ -130,32 +130,16 @@ font-weight: 700;
 
 /* ////////////////////////// */
 
-@media screen and (max-width: 35em){
-    .header{
-        width: 85%;
-    }
-    .container{
-        grid-template-columns: 1fr;
-        width: 85%;
-    } 
-}
 @media screen and (max-width: 45em){
     .header{
-        width: 85%;
+        width: 95%;
     }
     .container{
         grid-template-columns: 1fr;
-        width: 90%;
+        width: 95%;
+        overflow: hidden;
     } 
 }
-@media screen and (max-width: 55em){
-    .header{
-        width: 85%;
-    }
-    .container{
-        grid-template-columns: 1fr;
-        width: 85%;
-    } 
-}
+
 
 

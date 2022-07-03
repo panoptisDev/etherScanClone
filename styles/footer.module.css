@@ -53,13 +53,19 @@
 }
 
 
-/* ////////////////////////////////////// */
+/* /////////////////////////////////////// */
 
 @media screen and (max-width: 45em){
     .footer{
         grid-template-columns: 1fr;
         text-align: center;
         gap: 1.5rem;
+        width: 95%;
+    }
+    .social{
+        margin-left: 0rem;
+        font-size: 1.5rem;
+        padding-inline: 2rem;
     }
     
 }

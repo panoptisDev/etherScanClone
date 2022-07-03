@@ -32,6 +32,7 @@ const Footer = () => {
           <TiSocialLinkedin />
           <TiSocialFacebook />
           <TiSocialInstagram />
+          <TiSocialInstagram />
           <TiSocialYoutube />
         </div>
       </div>

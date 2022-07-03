@@ -68,8 +68,14 @@
 }
 
 @media screen and (max-width: 35em){
+    .block{
+        width: 95%;
+    }
     .box__header p {
        display: none;
+    }
+    .dataRow{
+        grid-template-columns: 2fr 4fr; 
     }
     
 

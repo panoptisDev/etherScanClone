@@ -55,7 +55,7 @@ const account = () => {
         setLoading(false);
       }
 
-      ////////////////////////////
+      /////////////////////////////
       const accountBalanc = await provider.getBalance(acc);
       const showBalance = ethers.utils.formatEther(accountBalanc);
       setBalance(showBalance);
@@ -188,7 +188,7 @@ const account = () => {
 
                   <div className={Style.accountBalance}>
                     <p className={Style.color}>Balance</p>
-                    <p>{balance} Ether</p>
+                    <p>{balance} ETH</p>
                   </div>
                   <div className={Style.accountValue}>
                     <p className={Style.color}>Value</p>
