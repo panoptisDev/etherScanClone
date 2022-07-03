@@ -1,7 +1,18 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+import { EtherProvider } from "../context/Ethere";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
-export default MyApp
+const MyApp = ({ Component, pageProps }) => (
+  <EtherProvider>
+    <div className="position">
+      <NavBar />
+
+      <Component {...pageProps} />
+      <Footer />
+    </div>
+  </EtherProvider>
+);
+
+export default MyApp;
